@@ -2,10 +2,9 @@
 
 cd original_data #Change to folder where our zipped files are
 
-# Loop through all .csv.bz2 files
+#Loop through all .csv.bz2 files
 for file in *.csv.bz2; do
     #Create an output filename based on the input file
-    #output_file="${file%.bz2}_new.csv"
     output_file="${file%.bz2}"
     output_file="${output_file%.csv}_new.csv"
 
