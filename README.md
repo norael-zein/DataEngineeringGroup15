@@ -10,11 +10,15 @@ Number of cancellations for each month: **airline_month.txt**
 
 Calculate number of data rows in month and carrier columns: **freq_new.py**
 
+
 Number of rows for each:
 - Month:**output_freq_month.txt**
 - Carrier: **output_freq_carrier.txt**
 
+
 Produce final frequency distribution: **final_frequency.py**
+
+
 Final frequency distribution: 
 - Month:**final_freq_month.txt**
 - Carrier: **final_freq_carrier.txt**     
