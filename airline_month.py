@@ -11,14 +11,14 @@ def read_data(file_path):
     return data
 
 
-month_data = read_data('month.txt')
+month_data = read_data('airline_month.txt')
 airline_data = read_data('airline.txt')
 
 
 plt.figure(figsize=(10, 5))
 plt.bar(month_data.keys(), month_data.values(), color='skyblue')
 plt.xlabel('Month')
-plt.ylabel('cancellation Count')
+plt.ylabel('Cancellation Count')
 plt.title('Monthly cancellation Count')
 plt.xticks(rotation=45)
 plt.grid(axis='y', linestyle='--', alpha=0.7)
@@ -28,7 +28,7 @@ plt.show()
 
 plt.figure(figsize=(8, 8))
 plt.pie(airline_data.values(), labels=airline_data.keys(), autopct='%1.1f%%', startangle=140)
-plt.title('cancellation Distribution by Airline')
+plt.title('Cancellation Distribution by Airline')
 plt.axis('equal')
 plt.savefig('airline_distribution.png')
 plt.show()
